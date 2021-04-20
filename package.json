@@ -1,0 +1,24 @@
+{
+  "name": "fe-code-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "bin": {
+    "fe-code-helper": "./bin/index.js"
+  },
+  "scripts": {
+    "start": "plugin",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wind1996/fe-code-helper.git"
+  },
+  "author": "2924456233@qq.com",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer-directory": "^2.2.0",
+    "inquirer-file-tree-selection-prompt": "^1.0.7",
+    "plop": "^2.7.4"
+  }
+}

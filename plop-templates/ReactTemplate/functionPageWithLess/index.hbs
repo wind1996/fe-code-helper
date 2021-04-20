@@ -1,0 +1,10 @@
+import React from 'react';
+import Page from '@/components/Page';
+import styles from './{{lessFileName}}.less';
+
+export default (props) => {
+  console.log(props);
+  return (<Page title="{{pageTitle}}" showGoBackBtn={false} className={styles.container}>
+    这是内容区域
+  </Page>);
+};

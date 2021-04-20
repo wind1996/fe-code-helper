@@ -1,0 +1,34 @@
+import React from 'react';
+import ModalWrapper from '@/components/ModalWrapper';
+
+@ModalWrapper
+class {{name}} extends React.Component {
+  render() {
+    return (
+      <div>
+        这是弹窗的内容区域
+      </div>
+    );
+  }
+}
+
+export default {{name}};
+
+/* 由于高阶组件ModalWrapper内部通过ref调用了子组件的方法，所以子组件不可以使用函数组件 */
+/* 直接赋值下面的代码至需要使用的地方即可 */
+/*
+const {{name}}Ref = useRef();
+
+const handleShow{{name}} = useCallback(()=>{
+  {{name}}Ref.current.show()
+})
+
+<{{name}}
+  ref={ {{name}}Ref}
+  modalConfig=\{{
+    title: '这是标题',
+    footer: null,
+    width: '60%'
+  }}
+/>
+*/
