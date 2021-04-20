@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+.idea/
+.DS_Store
+.git/
+.vscode
+npm-debug.log
+*.log*
+node.dev.env
+node.prod.env
+package-lock.json
+coverage/
+*registerBranches.json
